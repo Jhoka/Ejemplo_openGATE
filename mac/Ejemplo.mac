@@ -24,9 +24,9 @@
 
 # WORLD
 /gate/world/setMaterial                      Air
-/gate/world/geometry/setXLength              230 cm
-/gate/world/geometry/setYLength              230 cm
-/gate/world/geometry/setZLength              230 cm
+/gate/world/geometry/setXLength              100 cm
+/gate/world/geometry/setYLength              100 cm
+/gate/world/geometry/setZLength              100 cm
 
 # DAUGHTER
 /gate/world/daughters/name                     vol_name
