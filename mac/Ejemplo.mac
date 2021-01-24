@@ -16,6 +16,7 @@
 #/control/execute mac/visu.mac
 
 
+
 #=====================================================
 # GEOMETRY
 #=====================================================
@@ -48,6 +49,8 @@
 /gate/my_phantom/vis/forceSolid
 /gate/my_phantom/vis/setColor                grey
 
+
+
 #=====================================================
 # PHYSICS
 #=====================================================
@@ -69,6 +72,30 @@
 
 
 #=====================================================
+# INITIALISATION
+#=====================================================
+
+/gate/run/initialize
+
+
+
+#=====================================================
+# BEAMS
+#=====================================================
+/gate/source/addSource                 Neutron  gps 
+/gate/source/Neutron/gps/particle      neutron
+/gate/source/Neutron/gps/energytype    Mono 
+/gate/source/Neutron/gps/monoenergy    10. keV
+
+/gate/source/Neutron/gps/pos/type        Plane
+/gate/source/Neutron/gps/pos/rot1        0 1 0
+/gate/source/Neutron/gps/pos/rot2        1 0 0
+/gate/source/Neutron/gps/pos/shape       Circle
+/gate/source/Neutron/gps/pos/radius      30 cm
+
+
+
+#=====================================================
 # OUTPUT - DETECTOR
 #=====================================================
 
@@ -85,25 +112,6 @@
 /gate/actor/doseIn3D/enableDoseToWater     true
 /gate/actor/doseIn3D/saveEveryNSeconds     3000
 
-#=====================================================
-# INITIALISATION
-#=====================================================
-
-/gate/run/initialize
-
-#=====================================================
-# BEAMS
-#=====================================================
-/gate/source/addSource                 Neutron  gps 
-/gate/source/Neutron/gps/particle      neutron
-/gate/source/Neutron/gps/energytype    Mono 
-/gate/source/Neutron/gps/monoenergy    10. keV
-
-/gate/source/Neutron/gps/pos/type        Plane
-/gate/source/Neutron/gps/pos/rot1        0 1 0
-/gate/source/Neutron/gps/pos/rot2        1 0 0
-/gate/source/Neutron/gps/pos/shape       Circle
-/gate/source/Neutron/gps/pos/radius      30 cm
 
 
 #=====================================================
