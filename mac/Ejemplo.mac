@@ -36,7 +36,6 @@
 /gate/vol_name/geometry/setRmin                0.0 cm
 /gate/vol_name/geometry/setRmax                15.0 cm
 /gate/vol_name/placement/setTranslation        0 0 0 cm
-/gate/vol_name/vis/forceSolid
 /gate/vol_name/vis/setColor                    white
 
 # PHANTOM
